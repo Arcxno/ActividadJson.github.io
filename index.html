@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+
+    <title>One Piece</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header></header>
+<section class="about-section"> </section>
+<section class="personajes-section"> <h1 class="section-title">Personajes</h1></section>
+<footer>
+    <div class="footer-content">
+        <img src="https://1000marcas.net/wp-content/uploads/2022/10/One-Piece-Logo.png" alt="Descripción de la imagen">
+        <p>(C) Eiichiro Oda/Shueisha, Fuji Television, Toei Animation - </p>
+    </div>
+</footer>
+
+<script>
+
+    async function populate() {
+
+        const requestURL = 'onepiece.json';
+        const request = new Request(requestURL);
+
+        const response = await fetch(request);
+        const onepieceText = await response.text();
+
+        const onepiece = JSON.parse(onepieceText);
+        populateHeader(onepiece);
+        populateAbout(onepiece);
+        populatePersonajes(onepiece);
+    }
+
+    function populateHeader(obj) {
+        const header = document.querySelector('header');
+    
+        const logo = document.createElement('img');
+        logo.src = src="https://static.vecteezy.com/system/resources/previews/021/096/088/original/straw-hat-head-dress-accessory-png.png"; 
+        logo.alt = obj.Onepiece;
+        header.appendChild(logo);
+    
+        const navMenu = document.createElement('nav');
+        const ul = document.createElement('ul');
+
+        const homeLi = document.createElement('li');
+        const homeLink = document.createElement('a');
+        homeLink.href = 'https://one-piece.com/news/index.html'; 
+        homeLink.textContent = 'Noticias';
+        homeLi.appendChild(homeLink);
+        
+        const comicLi = document.createElement('li');
+        const comicLink = document.createElement('a');
+        comicLink.href = 'https://one-piece.com/comics/index.html';
+        comicLink.textContent = 'Manga';
+        comicLi.appendChild(comicLink);
+
+        const eventosLi = document.createElement('li');
+        const eventosLink = document.createElement('a');
+        eventosLink.href = 'https://one-piece.com/amusement/index.html';
+        eventosLink.textContent = 'Eventos';
+        eventosLi.appendChild(eventosLink);
+        
+        const contactLi = document.createElement('li');
+        const contactLink = document.createElement('a');
+        contactLink.href = 'https://one-piece.com/shop/index.html';
+        contactLink.textContent = 'Productos';
+        contactLi.appendChild(contactLink);
+
+        const socialLi = document.createElement('li');
+        const socialLink = document.createElement('a');
+        socialLink.href = 'https://twitter.com/opcom_info';
+        socialLink.textContent = 'Nuestras Redes';
+        socialLi.appendChild(socialLink);
+    
+        ul.appendChild(homeLi);
+        ul.appendChild(comicLi);
+        ul.appendChild(eventosLi);
+        ul.appendChild(contactLi);
+        ul.appendChild(socialLi);
+
+        navMenu.appendChild(ul);
+        header.appendChild(navMenu);
+    }
+    
+    function populateAbout(obj) {
+        const section = document.querySelector('section');
+        const parte1 = obj.parte1;
+        const parte2 = obj.parte2;
+
+        const aboutContainer = document.createElement('div');
+        aboutContainer.classList.add('about-container');
+    
+        const textContainer = document.createElement('div');
+        textContainer.classList.add('text-container');
+        const imageContainer = document.createElement('div');
+        imageContainer.classList.add('image-container');
+
+        const myImage = document.createElement('img');
+        myImage.src = 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/51158316-fd7e-48ca-b5fe-8542e9dfe357/dbqq5kv-8af73d59-c8b0-417f-a159-c7a0ff5e7dc6.png/v1/fill/w_1024,h_693/gol_d__roger_the_pirate_king_by_bodskih_dbqq5kv-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjkzIiwicGF0aCI6IlwvZlwvNTExNTgzMTYtZmQ3ZS00OGNhLWI1ZmUtODU0MmU5ZGZlMzU3XC9kYnFxNWt2LThhZjczZDU5LWM4YjAtNDE3Zi1hMTU5LWM3YTBmZjVlN2RjNi5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.jib_UwlnjIFbhd8GpgTffc9raApYnmYV4bslfA4srwE';
+        myImage.alt = 'gold roger';
+        myImage.classList.add('about-image');
+        imageContainer.appendChild(myImage);
+
+        const myH1 = document.createElement('h1');
+        const myH2 = document.createElement('h2');
+        myH1.textContent = obj.Onepiece;
+        myH2.textContent = obj.Fecha;
+        myH1.classList.add('intro');
+        myH2.classList.add('date');
+        textContainer.appendChild(myH1);
+        textContainer.appendChild(myH2);
+
+        const myPara1 = document.createElement('p');
+        const myPara2 = document.createElement('p');
+        const myPara3 = document.createElement('p');
+        const myPara4 = document.createElement('p');
+
+        const historia1Parte1 = parte1.historia1;
+        const historia2Parte1 = parte1.historia2;
+        const historia3Parte2 = parte2.historia3;
+        const historia4Parte2 = parte2.historia4;
+        myPara1.textContent = historia1Parte1;
+        myPara2.textContent = historia2Parte1;
+        myPara3.textContent = historia3Parte2;
+        myPara4.textContent = historia4Parte2;
+
+        myPara1.classList.add('about-text');
+        myPara2.classList.add('about-text');
+        myPara3.classList.add('about-text');
+        myPara4.classList.add('about-text');
+
+        textContainer.appendChild(myPara1);
+        textContainer.appendChild(myPara2);
+        textContainer.appendChild(myPara3);
+        textContainer.appendChild(myPara4);
+
+        aboutContainer.appendChild(textContainer);
+        aboutContainer.appendChild(imageContainer);
+        section.appendChild(aboutContainer);
+    }
+    function populatePersonajes(obj) {
+        const section = document.querySelector('.personajes-section');
+        const perso = obj.mugiwara;
+    
+        for (const per of perso) {
+            const persoContainer = document.createElement('div');
+            persoContainer.classList.add('perso-container');
+            const myArticle = document.createElement('article');
+    
+            const myH2 = document.createElement('h2');
+            const myPara1 = document.createElement('p');
+            const myPara2 = document.createElement('p');
+            const myPara3 = document.createElement('p');
+            const myPara4 = document.createElement('p');
+            const myPara5 = document.createElement('p');
+            const myPara6 = document.createElement('p');
+    
+            myH2.textContent = per.nombre;
+            myPara1.textContent = `Apodo: ${per.apodo}`;
+            myPara2.textContent = `Edad: ${per.edad}`;
+            myPara3.textContent = `Fruta: ${per.fruta}`;
+            myPara4.textContent = `Cumpleaños: ${per.cumple}`;
+            myPara5.textContent = `Recompensa: ${per.recom}`;
+            myPara6.textContent = `Objetivo: ${per.obj}`;
+            
+            persoContainer.style.backgroundImage = `url('${per.imagen}')`;
+    
+            myArticle.appendChild(myH2);
+            myArticle.appendChild(myPara1);
+            myArticle.appendChild(myPara2);
+            myArticle.appendChild(myPara3);
+            myArticle.appendChild(myPara4);
+            myArticle.appendChild(myPara5);
+            myArticle.appendChild(myPara6);
+        
+            persoContainer.appendChild(myArticle);
+            section.appendChild(persoContainer);
+        }
+    }
+  
+
+    populate();
+</script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+{
+    "Onepiece": "One piece",
+    "Fecha": "22 de julio de 1997",
+    "parte1": {
+        "historia1": "El mundo es una gran era de piratas. Gol D. Roger, el Rey Pirata, es la única persona en la historia que conquistó la Gran Ruta (Grand Line)",
+        "historia2": "Había adquirido toda la riqueza, la fama y el poder, y las palabras que pronunció justo antes de su ejecución sacudieron al mundo. ¿Es mi tesoro? Si lo quieres, te lo daré. ¡Encuéntralo! Dejé todo en este mundo allí"
+    },
+    "parte2": {
+        "historia3": "Esas palabras crearon un enorme oleaje y expulsaron a muchos guerreros feroces al mar. En cuanto al One Piece dejado por el Rey Pirata, los piratas luchan bajo la bandera de sus creencias y se hacen un nombre, algunos en busca de ambiciones y otros en busca de romance.",
+        "historia4": "¡¡En una era llena de agitación y aventuras, un niño se adentra en el océano para convertirse en el Rey Pirata!! historia"
+    },
+    "active": true,
+    "mugiwara": [
+        {
+            "nombre": "Monkey D Luffy",
+            "edad": "19 años",
+            "apodo": "sombrero de paja luffy",
+            "fruta": "Gomu Gomu no mi",
+            "cumple":"5 de mayo",
+            "recom":"3.161.000.100 Belly",
+            "obj":" convertirse en el Rey Pirata",
+            "imagen": "https://e0.pxfuel.com/wallpapers/438/757/desktop-wallpaper-luffy-new-reward-one-piece-bounties-one-piece-luffy-one-piece-manga-zoro-bounty.jpg"
+        },
+        {
+            "nombre": "Roronoa Zoro",
+            "edad": "21 años",
+            "apodo": "cazador de piratas zoro",
+            "fruta": "No tiene",
+            "cumple":"11 de noviembre",
+            "recom":"1.111.000.000 Belly",
+            "obj":"convertirse en el mejor espadachín del mundo",
+            "imagen": "https://e1.pxfuel.com/desktop-wallpaper/934/937/desktop-wallpaper-zoro-bounty-wanted-poster-poster-by-nichinu-sajwan-wanted-zoro.jpg"
+        },
+        {
+            "nombre": "Namí",
+            "edad": "21 años",
+            "apodo": "Gata Ladrona",
+            "fruta": "No tiene",
+            "cumple":"3 de julio",
+            "recom":"366.000.000 Belly",
+            "obj":"hacer un mapa mundial",
+            "imagen": "https://e1.pxfuel.com/desktop-wallpaper/166/999/desktop-wallpaper-nami-bounty-wanted-poster-one-piece-in-2021-nami-wanted-poster.jpg"
+        },
+        {
+            "nombre": "Usopp",
+            "edad": "19 años",
+            "apodo": "Dios Usopp / Sogeking",
+            "fruta": "No tiene",
+            "cumple":"1 de abril",
+            "recom":"500.000.000 Belly",
+            "obj":"convertirse en un guerrero valiente",
+            "imagen": "https://e1.pxfuel.com/desktop-wallpaper/681/465/desktop-wallpaper-usopp-wanted-poster-penggambar-one-piece-wanted-poster.jpg"
+        },
+        {
+            "nombre": "Sanji",
+            "edad": "21 años",
+            "apodo": "Pierna Negra",
+            "fruta": "No tiene",
+            "cumple":"2 de Marzo",
+            "recom":"1.032.000.000 Belly",
+            "obj":"encontrar All Blue",
+            "imagen": "https://e1.pxfuel.com/desktop-wallpaper/252/212/desktop-wallpaper-vinsmoke-sanji-bounty-wanted-poster-one-piece-sanji-wanted-poster.jpg"
+        },
+        {
+            "nombre": "Tony Tony Chopper",
+            "edad": "17 años",
+            "apodo": "Amante del Algodón de Azúcar",
+            "fruta": "Hito Hito",
+            "cumple":"24 de diciembre",
+            "recom":"1.000 Belly",
+            "obj":"convertirse en una panacea",
+            "imagen": "https://e1.pxfuel.com/desktop-wallpaper/445/155/desktop-wallpaper-chopper-bounty-chopper-wanted.jpg"
+        },
+        {
+            "nombre": "Nico Robin",
+            "edad": " 30 años",
+            "apodo": "Niña Demonio",
+            "fruta": "Hana Hana",
+            "cumple":"6 de febrero",
+            "recom":"930.000.000 Belly",
+            "obj":"ver el Texto de la Historia Verdadera (Rio Poneglifo)",
+            "imagen": "https://e1.pxfuel.com/desktop-wallpaper/453/957/desktop-wallpaper-tokiwa-corporation-anime-one-piece-official-licensed-wanted-poster-new-world-posters-prints.jpg"
+        },
+        {
+            "nombre": "Franky",
+            "edad": "36 años",
+            "apodo": "El Cyborg / Hombre de Acero",
+            "fruta": "No tiene",
+            "cumple":"9 de marzo",
+            "recom":"394.000.000 Belly",
+            "obj":"viajar en el barco de mis sueños que construí y llegar al fin del mar",
+            "imagen": "https://e0.pxfuel.com/wallpapers/915/38/desktop-wallpaper-franky-bounties-anime-manga-poster-print-metal-posters-displate-one-piece-bounties-one-piece-comic-one-piece-drawing-bounty-franky.jpg"
+        },
+        {
+            "nombre": "Brook",
+            "edad": "90 años",
+            "apodo": "Soul King",
+            "fruta": "Yomi Yomi",
+            "cumple":"3 de abril",
+            "recom":"383.000.000 Belly",
+            "obj":"encontrarse con Laboon",
+            "imagen": "https://i0.wp.com/posterycuadros.com/wp-content/uploads/2022/11/1000014086.jpg?fit=880%2C1287&ssl=1"
+        },
+        {
+            "nombre": "Jinbei",
+            "edad": "46 años",
+            "apodo": "El Caballero del Mar",
+            "fruta": "No tiene",
+            "cumple":"2 de Abril",
+            "recom":"1.100.000.000 Belly",
+            "obj":"Indefinido",
+            "imagen": "https://w0.peakpx.com/wallpaper/716/873/HD-wallpaper-jinbe-wanted-poster-poster-by-melvina-poole-displate-one-piece-drawing-one-piece-bounties-one-piece-comic-jinbei-bounty.jpg"
+        },
+        {
+            "nombre": "Going Merry",
+            "edad": "Indefinido",
+            "apodo": "Indefinido",
+            "fruta": "Indefinido",
+            "cumple":"22 de enero",
+            "recom":"Indefinido",
+            "obj":"Indefinido",
+            "imagen": "https://www.friking.es/img/cms/Going-Merry-live-action-One-Piece-e1615311052399.jpg"
+        },
+        {
+            "nombre": "Sunny",
+            "edad": "Indefinido",
+            "apodo": "Indefinido",
+            "fruta": "Indefinido",
+            "cumple":"25 de marzo",
+            "recom":"Indefinido",
+            "obj":"Indefinido",
+            "imagen": "https://e0.pxfuel.com/wallpapers/931/708/desktop-wallpaper-going-merry-going-to-the-movies-going-disney-world-and-going-quantum-one-piece-sunny.jpg"
+        }
+    ]
+}
